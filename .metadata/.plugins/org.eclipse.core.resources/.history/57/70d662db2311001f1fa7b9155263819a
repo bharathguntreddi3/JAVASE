@@ -1,0 +1,18 @@
+package oop1;
+
+public class TestCounter {
+
+	public static void main(String[] args) {
+
+		Counter c;	// object reference
+		
+		c = new Counter();
+		
+		c.inc();	//public methods
+		c.inc();
+		c.dec();
+		
+//		c.value ++;	//Cannot access the value because the initialized value is private
+	}
+
+}

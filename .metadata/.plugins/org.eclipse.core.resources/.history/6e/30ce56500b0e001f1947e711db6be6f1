@@ -1,0 +1,12 @@
+package oop1;
+
+public class TestStudents {
+
+	public static void main(String[] args) {
+
+		Students s1 = new Students("Bharath", "JavaSE", 6000);
+		
+		s1.printDetails();
+	}
+
+}

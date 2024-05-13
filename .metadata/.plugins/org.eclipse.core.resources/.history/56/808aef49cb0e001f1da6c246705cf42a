@@ -1,0 +1,29 @@
+package oop1;
+
+public class Students {
+	
+	private String s_name;
+	private String course;
+	private int feePaid;
+	
+	// constructor to store values
+	public Students(String n, String c, int f) {
+		s_name = n;
+		course = c;
+		feePaid = f;
+	}
+	
+	public void printDetails() {
+		System.out.println(s_name);
+		System.out.println(course);
+		System.out.println(feePaid);
+	}
+	
+	public String getCourse() {
+		return course;
+	}
+	
+	public int getFee() {
+		return feePaid;
+	}
+}

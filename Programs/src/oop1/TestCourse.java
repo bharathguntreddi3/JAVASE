@@ -8,6 +8,8 @@ public class TestCourse {
 		// Course c2 = new Course(); // Cannot assign empty parameters
 		
 		System.out.print(c1.netFee());
+		
+		System.out.println(Course.getTaxRate());
 	}
 
 }

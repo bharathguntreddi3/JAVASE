@@ -1,0 +1,22 @@
+package oop1;
+
+class Shape {
+	
+}
+
+class Circle extends Shape {
+	private double radius;
+}
+
+class Square extends Shape {
+	private double side;
+}
+
+public class TestShapes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

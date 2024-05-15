@@ -1,0 +1,29 @@
+package oop1;
+
+class Shape {
+	protected int x, y;
+	// x, y for square start points and for the circle center	
+	public Shape(int x,int y) {
+		
+	}
+}
+
+class Circle extends Shape {
+	private double radius;
+	public Circle(int x, int y, double radius) {
+		super();
+	}
+}
+
+class Square extends Shape {
+	private double side;
+}
+
+public class TestShapes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

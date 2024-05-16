@@ -86,25 +86,12 @@ public class TestShapes {
 	public static void main(String[] args) {
 		Shape s;
 		s = new Circle(10, 20, 5);	//upcasting subclass to superclass
-		// upcasting - subclass is stored in the superclass reference
-		if(s instanceof Circle) {
-			Circle c = (Circle) s;
-		}
-		else {
-			Square sq = (Square) s;
-		}
-		
-		if (s instanceof Circle c1) {
-			// above two steps in if can be performed by only if
-			System.out.println(c1.getArea());
-		}
+
 
 		Circle c;
 //		c = s;	// error every circle is a shape but every shape is not a circle
 		c = (Circle) s;	//downcasting from super to subclass
 		
-//		Square sq;
-//		sq = (Square) s;	// once an object is casted it cannot be casted to other object
 	}
 
 }

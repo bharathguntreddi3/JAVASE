@@ -95,7 +95,7 @@ public class TestShapes {
 		}
 		
 		if (s instanceof Circle c1) {
-			// above two steps in if can be performed by only if
+			// above two steps in in if can be performed by only if
 			System.out.println(c1.getArea());
 		}
 

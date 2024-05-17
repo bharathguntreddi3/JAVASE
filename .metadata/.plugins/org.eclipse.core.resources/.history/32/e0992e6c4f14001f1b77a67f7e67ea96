@@ -21,14 +21,11 @@ abstract class Shape {
 		return this.y;
 	}
 	
-	public abstract double getArea();// no body
-	//this is an abstract and every subclass must override this abstract
-	// change the class name also to abstract
-//	public double getArea() {
+	public abstract double getArea() {
 //		return 0;	// this is ambiguity
-//		
+		//this is an abstract and every subclass must override this abstract method
+		// change the class nname also to abstract
 	}
-	
 }
 
 class Circle extends Shape {

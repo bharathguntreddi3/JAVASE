@@ -1,6 +1,6 @@
 package oop1;
 
-abstract class Shape {
+class Shape {
 	protected int x, y;
 	// x, y for square start points and for the circle center	
 	public Shape(int x,int y) {
@@ -20,15 +20,6 @@ abstract class Shape {
 	public int getY() {
 		return this.y;
 	}
-	
-	public abstract double getArea();// no body
-	//this is an abstract and every subclass must override this abstract
-	// change the class name also to abstract
-//	public double getArea() {
-//		return 0;	// this is ambiguity
-//		
-	}
-	
 }
 
 class Circle extends Shape {
@@ -81,7 +72,7 @@ class Rectangle extends Shape {
 	public void print() {
 		super.print();
 		System.out.println("Area of rectangle is length multiplied with the breadth");
-		System.out.println(length);	// Compile-time polymorphism
+		System.out.println(length);
 		System.out.println(width);
 	}
 	
@@ -124,14 +115,8 @@ public class TestShapes {
 		// so, after compilation runtime comes into action and determines to which method the object is assigned and it works and prints both the print methods.
 		// this is called "Runtime Polymorphism"
 		// this is also called "Dynamic method dispatch" or ""Late Binding
-		// we are dispatching a method at runtime
-		System.out.println(s.getArea());
-		
 		s = new Square(10, 10, 20);
 		s.print();	//runtime polymorphism
-		System.out.println(s.getArea());
-		
-		// if the getArea() is not present in subclass then s takes the getArea method from superclass
 	}
 
 }

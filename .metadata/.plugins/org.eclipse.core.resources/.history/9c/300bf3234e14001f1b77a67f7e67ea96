@@ -1,6 +1,6 @@
 package oop1;
 
-abstract class Shape {
+class Shape {
 	protected int x, y;
 	// x, y for square start points and for the circle center	
 	public Shape(int x,int y) {
@@ -21,14 +21,9 @@ abstract class Shape {
 		return this.y;
 	}
 	
-	public abstract double getArea();// no body
-	//this is an abstract and every subclass must override this abstract
-	// change the class name also to abstract
-//	public double getArea() {
-//		return 0;	// this is ambiguity
-//		
+	public double getArea() {
+		return 0;
 	}
-	
 }
 
 class Circle extends Shape {
@@ -130,8 +125,6 @@ public class TestShapes {
 		s = new Square(10, 10, 20);
 		s.print();	//runtime polymorphism
 		System.out.println(s.getArea());
-		
-		// if the getArea() is not present in subclass then s takes the getArea method from superclass
 	}
 
 }

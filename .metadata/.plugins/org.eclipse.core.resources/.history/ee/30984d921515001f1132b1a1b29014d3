@@ -1,0 +1,30 @@
+package oop1;
+
+abstract class Employee {
+	protected String name, desg;
+	public Employee(String name, String desg) {
+		this.name = name;
+		this.desg = desg;
+	}
+	public String getDesg() {
+		return this.desg;
+	}
+	public void setDesg(String desg) {
+		this.desg = desg;
+	}
+	public String getName(String name) {
+		return this.name = name;
+	}
+	public abstract int getPay();
+}
+
+
+
+public class TestEmployee1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

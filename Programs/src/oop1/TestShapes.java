@@ -1,5 +1,6 @@
 package oop1;
 
+// we cannot create objects for abstract classes
 abstract class Shape {
 	protected int x, y;
 	// x, y for square start points and for the circle center	
@@ -28,8 +29,6 @@ abstract class Shape {
 //		return 0;	// this is ambiguity
 //		
 	}
-	
-}
 
 class Circle extends Shape {
 	private double radius;
@@ -81,8 +80,8 @@ class Rectangle extends Shape {
 	public void print() {
 		super.print();
 		System.out.println("Area of rectangle is length multiplied with the breadth");
-		System.out.println(length);	// Compile-time polymorphism
-		System.out.println(width);
+		System.out.println(this.length);	// Compile-time polymorphism
+		System.out.println(this.width);
 	}
 	
 	
@@ -90,10 +89,11 @@ class Rectangle extends Shape {
 		return this.length * this.width;
 	}
 }
+
 public class TestShapes {
 
 	public static void main(String[] args) {
-//		"""
+		
 //		Shape s;
 //		s = new Circle(10, 20, 5);	//upcasting subclass to superclass
 //		// upcasting - subclass is stored in the superclass reference
@@ -116,7 +116,6 @@ public class TestShapes {
 ////		Square sq;
 ////		sq = (Square) s;	// once an object is casted it cannot be casted to other object
 //	
-//		"""
 		
 		Shape s = new Circle(10, 20, 15);
 		s.print();	// runtime polymorphism	

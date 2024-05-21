@@ -1,4 +1,4 @@
-package oop1;
+package lib1;
 
 public class VerticalString {
 

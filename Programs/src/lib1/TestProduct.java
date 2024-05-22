@@ -21,9 +21,14 @@ class Product {
 		if (obj instanceof Product other) {
 //			Product other = (Product) obj; // super class converted to subclass donwcasted
 			return this.title.equals(other.title) && this.price == other.price;
-		} else{
+		} 
+		else{
 			return false;
 		}
+	}
+	@Override
+	public int hashCode() {
+		return this.price;
 	}
 }
 

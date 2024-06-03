@@ -1,6 +1,6 @@
 IF "%~1"=="" (
     echo Commit message is required.
-    echo Usage: git_daily_tasks.bat "Your commit message"
+    echo Usage: upload.bat "Your commit message"
     exit /b 1
 )
 

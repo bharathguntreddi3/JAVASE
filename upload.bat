@@ -1,16 +1,11 @@
-IF "%~1"=="" (
-    echo Commit message is required.
-    echo Usage: upload.bat "Your commit message"
-    exit /b 1
-)
-
 git status
 
+rem add all files
 git add .
 
-git commit -m "%~1"
+rem commit with the given message 
+git commit -m %1
 
-git pull origin master
-
+rem push master branch of this remote project
 git push origin master
 

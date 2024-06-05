@@ -1,5 +1,5 @@
 Java
-JavaScript
+HTMLJavaScript
 Python
 C
-GoLang
+C#

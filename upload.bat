@@ -1,11 +1,12 @@
+checking the status of the files
 git status
 
-rem add all files
+adding all files to rem
 git add .
 
-rem commit with the given message 
+committing all files to the rem
 git commit -m %1
 
-rem push master branch of this remote project
+push all files to the rem with master branch
 git push origin master
 

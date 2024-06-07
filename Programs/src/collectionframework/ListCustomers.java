@@ -24,3 +24,7 @@ public class ListCustomers {
 	}
 
 }
+
+
+
+//Assume a file students.txt with studentname, dob display student name followed by age in years

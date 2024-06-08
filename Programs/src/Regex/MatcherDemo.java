@@ -13,7 +13,7 @@ public class MatcherDemo {
 			System.out.println("group(): " + m.group());
 		}
 		// pattern replacement 
-		p = Pattern.compile("-");
+		p = Pattern.compile("-+");
 		m = p.matcher("----12345----");
 		String output = m.replaceAll("*");
 		System.out.println(output);
